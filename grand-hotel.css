@@ -229,15 +229,110 @@ header {
   line-height: 34px;
   text-shadow: 0 0 4px #222222;
 }
+
+.booking-container {
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.booking-title {
+  font-size: 14px;
+  color: #4a4a4a;
+  letter-spacing: 0.7px;
+  line-height: 17px;
+}
+
+.drop-down {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #4a4a4a;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.booking-detail-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 15px;
+  gap: 20px;
+}
+
+.booking-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book-date-content {
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 22px;
+}
+
+.booking-now {
+  width: 100%;
+  background-color: #c99a32;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 25px;
+}
+
+.booking-container-top {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about {
+  padding: 20px 20px;
+}
+.about-title {
+  padding-top: 20px;
+  font-size: 24px;
+  color: #8e7614;
+  font-weight: 300;
+  line-height: 29px;
+  margin: -10px 0 10px;
+}
+
+.about-poem-title {
+  color: #39393a;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0 0 10px;
+}
+
+.about-poem-content {
+  color: #39393a;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 17px;
+}
 @media screen and (min-width: 576px) {
   .header-container {
     padding: 0 100px;
+  }
+  .booking-container {
+    padding: 20px 40px;
+  }
+  .about {
+    padding: 20px 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header-container {
     padding: 0 30px;
+  }
+  .booking-container {
+    margin: 0 110px;
+  }
+  .about-hotel-container {
+    margin: 0 110px;
   }
 }
 
@@ -307,5 +402,19 @@ header {
     font-size: 48px;
     line-height: 58px;
     text-shadow: 0 0 4px #222222;
+  }
+
+  .about-hotel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  .about-poem-title {
+    font-size: 15px;
+  }
+  .about-poem-content {
+    font-size: 14px;
   }
 }
