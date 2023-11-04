@@ -475,6 +475,36 @@ footer {
   padding: 0 20px;
 }
 
+/* footer top */
+.hotel-details-container {
+  padding: 20px 0;
+}
+
+.hotel-name {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.hotel-detail {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.hotel-container {
+  display: none;
+}
+
+.other-service-container {
+  display: none;
+}
+
+.follow-container {
+  display: none;
+}
+/* footer down */
 .footer-down-container {
   width: 100%;
   display: flex;
@@ -519,6 +549,7 @@ footer {
   line-height: 15px;
   padding: 10px 0 0;
 }
+
 @media screen and (min-width: 576px) {
   .header-container {
     padding: 0 100px;
@@ -652,7 +683,32 @@ footer {
   .about-poem-content {
     font-size: 14px;
   }
+  .footer-top-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .hotel-container {
+    display: unset;
+    padding: 20px 0;
+  }
+
+  .other-service-container {
+    display: unset;
+    padding: 20px 0;
+  }
+
+  .follow-container {
+    display: unset;
+    padding: 20px 0;
+  }
+  .social-media-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 }
+
 @media screen and (min-width: 1200px) {
   .footer-top-container {
     display: none;
