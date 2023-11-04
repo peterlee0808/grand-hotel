@@ -312,6 +312,65 @@ header {
   font-weight: 300;
   line-height: 17px;
 }
+
+.twins-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.know-container {
+  background-image: url(pic/know.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+}
+
+.know-content-container {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: black;
+  opacity: 0.6;
+  padding: 20px 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.video-container {
+  background-image: url(pic/video.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+}
+
+.video-content-container {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: black;
+  opacity: 0.6;
+  padding: 20px 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
 @media screen and (min-width: 576px) {
   .header-container {
     padding: 0 100px;
@@ -333,6 +392,9 @@ header {
   }
   .about-hotel-container {
     margin: 0 110px;
+  }
+  .twins-container {
+    padding: 20px 100px;
   }
 }
 
