@@ -143,6 +143,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  opacity: 0.9;
 }
 
 .header-container {
@@ -181,6 +182,12 @@ header {
   border: 1px solid black;
 }
 
+.shopping:hover,
+.calendar:hover {
+  background-color: #5d1d20;
+  cursor: pointer;
+}
+
 .calendar {
   background-color: #922528;
   padding: 15px;
@@ -208,7 +215,7 @@ header {
   background-image: url(pic/bg.jpg);
   background-position: center;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 50vw;
   display: flex;
   flex-direction: column;
@@ -333,6 +340,12 @@ header {
   position: relative;
 }
 
+.know-container:hover {
+  cursor: pointer;
+  width: 80%;
+  transition: 0.6s ease-in;
+}
+
 .know-content-container {
   color: white;
   position: absolute;
@@ -356,6 +369,12 @@ header {
   width: 50vw;
   height: 50vh;
   position: relative;
+}
+
+.video-container:hover {
+  cursor: pointer;
+  width: 80%;
+  transition: 0.6s ease-in;
 }
 
 .video-content-container {
@@ -391,7 +410,7 @@ header {
 .location-details {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .address-container {
@@ -399,6 +418,11 @@ header {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+
+.address-container:hover {
+  cursor: pointer;
+  color: #8e7614;
 }
 
 .address {
@@ -417,6 +441,11 @@ header {
   gap: 10px;
 }
 
+.tel-container:hover {
+  cursor: pointer;
+  color: #8e7614;
+}
+
 .tel {
   color: #39393a;
   font-size: 14px;
@@ -431,6 +460,11 @@ header {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+
+.mail-container:hover {
+  cursor: pointer;
+  color: #8e7614;
 }
 
 .mail {
@@ -449,11 +483,15 @@ header {
 .more a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #b5861f;
+  background-color: #c99a32;
   font-size: 14px;
   letter-spacing: 0.7px;
   line-height: 20px;
   padding: 15px 37px;
+}
+
+.more a:hover {
+  background-color: #b5861f;
 }
 
 .map-container {
@@ -477,7 +515,7 @@ footer {
 
 /* footer top */
 .hotel-details-container {
-  padding: 20px 0;
+  padding: 20px 0px;
 }
 
 .hotel-name {
@@ -488,9 +526,14 @@ footer {
 }
 .hotel-detail {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 20px;
+  padding: 5px 0;
+}
+
+.hotel-detail:hover {
+  cursor: pointer;
 }
 
 .hotel-container {
@@ -550,6 +593,9 @@ footer {
   padding: 10px 0 0;
 }
 
+.social-icon:hover {
+  cursor: pointer;
+}
 @media screen and (min-width: 576px) {
   .header-container {
     padding: 0 100px;
@@ -563,32 +609,28 @@ footer {
   .location-container {
     padding: 20px 40px;
   }
+  .hotel-details-container {
+    padding: 20px 40px;
+  }
+  .footer-down-container {
+    padding: 10px 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header-container {
     padding: 0 30px;
   }
-  .booking-container {
-    margin: 0 110px;
-  }
-  .about-hotel-container {
-    margin: 0 110px;
-  }
-  .twins-container {
-    padding: 20px 100px;
-  }
   .location-container {
     display: flex;
     flex-direction: row;
-    padding: 20px 120px;
   }
   .location-details-container {
-    width: 50%;
+    width: 30%;
     padding: 20px;
   }
   .map-container {
-    width: 50%;
+    width: 70%;
     max-height: 100%;
   }
   .map {
@@ -597,14 +639,16 @@ footer {
   .footer-down-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 400px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .header-container {
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 50px;
   }
   .menubar {
     display: none;
@@ -618,6 +662,10 @@ footer {
     display: flex;
     align-items: center;
   }
+  .large-logo-container:hover {
+    cursor: pointer;
+  }
+
   .header-nav {
     display: unset;
   }
@@ -669,7 +717,9 @@ footer {
     line-height: 58px;
     text-shadow: 0 0 4px #222222;
   }
-
+  .about {
+    padding: 20px 20px;
+  }
   .about-hotel-container {
     display: flex;
     flex-direction: row;
@@ -700,18 +750,32 @@ footer {
 
   .follow-container {
     display: unset;
-    padding: 20px 0;
+    padding: 20px 20px 0 0;
   }
   .social-media-container {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
+  .location-container {
+    padding: 20px 20px;
+  }
+
+  .footer-container {
+    padding: 0px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-top-container {
-    display: none;
+    /* display: none; */
+    background-color: #f6f6f6;
+  }
+  .hotel-name {
+    color: #8e7614;
+  }
+  .hotel-detail {
+    color: #39393a;
   }
   .footer-nav a {
     font-size: 14px;
@@ -723,6 +787,5 @@ footer {
     flex-direction: row;
     font-size: 14px;
     line-height: 24px;
-    padding: 24px;
   }
 }
