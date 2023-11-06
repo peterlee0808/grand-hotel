@@ -402,6 +402,45 @@ header {
   line-height: 20px;
 }
 
+/* accommodation */
+.accommodation {
+  padding: 0 20px;
+}
+
+.room {
+  width: 100%;
+  text-decoration: none;
+}
+
+.room-container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.room-image {
+  background-image: url(pic/space-room.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.room-title {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 25px;
+  padding-bottom: 30px;
+}
+
 /* location */
 .location-details-container {
   width: 100%;
@@ -617,8 +656,15 @@ footer {
   .about {
     padding: 20px 40px;
   }
+
+  .accommodation {
+    padding: 0 40px;
+  }
   .location-container {
     padding: 20px 40px;
+  }
+  .location-details-container {
+    padding: 50px 0 20px 0;
   }
   .hotel-details-container {
     padding: 20px 40px;
@@ -637,6 +683,9 @@ footer {
   }
   .book-date-content {
     font-size: 22px;
+  }
+  .map-container {
+    padding: 20px 0;
   }
 }
 
@@ -658,8 +707,8 @@ footer {
     flex-direction: row;
   }
   .location-details-container {
-    width: 30%;
-    padding: 20px;
+    width: 60%;
+    padding: 20px 0;
   }
   .map-container {
     width: 70%;
@@ -673,6 +722,10 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+  }
+  .room-container {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -781,9 +834,7 @@ footer {
   .about-hotel-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+    gap: 55px;
   }
   .about-poem-title {
     font-size: 15px;
@@ -819,9 +870,12 @@ footer {
   .location-container {
     padding: 20px 20px;
   }
-
   .footer-container {
     padding: 0px;
+  }
+  .location-details-container {
+    padding: 20px 20px;
+    width: 28%;
   }
 }
 
@@ -847,5 +901,12 @@ footer {
     font-size: 14px;
     line-height: 24px;
     padding-top: 30px;
+  }
+  .about-hotel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
   }
 }
