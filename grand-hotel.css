@@ -238,6 +238,11 @@ header {
   text-shadow: 0 0 4px #222222;
 }
 
+.line-image img {
+  width: 100%;
+  padding: 0 20vw;
+}
+
 .booking-container {
   background-color: white;
   padding: 10px 20px;
@@ -263,7 +268,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding-top: 15px;
+  padding: 15px 20px 0 20px;
   gap: 20px;
 }
 
@@ -293,6 +298,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 10px 20px;
 }
 
 .about {
@@ -563,6 +569,7 @@ footer {
   display: flex;
   flex-direction: row;
   padding-top: 10px;
+  width: 50%;
 }
 
 .footer-nav ul {
@@ -619,11 +626,32 @@ footer {
   .footer-down-container {
     padding: 10px 40px;
   }
+  .booking-container-top {
+    padding: 0 20px 30px 20px;
+  }
+  .booking-detail-container {
+    padding: 0 20px;
+  }
+  .book-date {
+    font-size: 14px;
+  }
+  .book-date-content {
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header-container {
     padding: 0 30px;
+  }
+
+  .booking-container {
+    width: auto;
+    padding: 20px 20px 30px 20px;
+    transform: translateY(-70px);
+    background-color: white;
+    opacity: 0.9;
+    margin: 0 20px;
   }
   .location-container {
     display: flex;
@@ -645,7 +673,6 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 400px;
   }
 }
 
@@ -662,7 +689,7 @@ footer {
   }
   .large-logo-container {
     display: unset;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     display: flex;
     align-items: center;
   }
@@ -721,8 +748,35 @@ footer {
     line-height: 58px;
     text-shadow: 0 0 4px #222222;
   }
+
+  .booking-container {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    transform: translateY(-110px);
+  }
+
+  .booking-card {
+    width: 130px;
+  }
+  .booking-container-top {
+    padding: 20px;
+  }
+
+  .booking-detail-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .booking-now {
+    width: auto;
+  }
   .about {
-    padding: 20px 20px;
+    padding: 20px 40px;
   }
   .about-hotel-container {
     display: flex;
@@ -737,6 +791,7 @@ footer {
   .about-poem-content {
     font-size: 14px;
   }
+
   .footer-top-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -791,5 +846,6 @@ footer {
     flex-direction: row;
     font-size: 14px;
     line-height: 24px;
+    padding-top: 30px;
   }
 }
